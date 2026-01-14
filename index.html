@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Blog App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🔥 My Blog</h2>
+  <button id="logoutBtn" class="hide">Logout</button>
+</nav>
+
+<!-- AUTH CONTAINER -->
+<section id="authBox">
+  <h3>Welcome 👋</h3>
+  <input type="email" id="email" placeholder="Enter Email" >
+  <input type="password" id="password" placeholder="Enter Password";>
+  <button id="signupBtn">Signup</button>
+  <button id="loginBtn">Login</button>
+</section>
+
+<section id="blogForm">
+  <input id="title" placeholder="Blog Title">
+  <textarea id="content" placeholder="Blog Content"></textarea>
+  <input type="text" id="category" placeholder="Category (Tech, Lifestyle, etc)">
+  <input type="file" id="image">
+  <button id="addBlogBtn">Post Blog</button>
+</section>
+<select id="categoryFilter">
+  <option value="">All Categories</option>
+  <option value="Tech">Tech</option>
+  <option value="Lifestyle">Lifestyle</option>
+  <option value="Other">Other</option>
+</select>
+
+<div id="blogList"></div>
+
+
+
+<script type="module" src="./firebase.config.js"></script>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
